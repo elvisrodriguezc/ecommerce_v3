@@ -1,0 +1,62 @@
+.login-bg,
+.login-img {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 1));
+}
+
+
+
+.login.login-v2 {
+    min-height: 100vh;
+    color: #fff;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 25px;
+}
+
+
+.login-header {
+    margin-bottom: rem(20px);
+    position: sticky;
+    display: flex;
+    align-items: middle;
+    gap: 20px;
+}
+
+.brand {
+    padding: 0;
+    font-size: 28px;
+    font-weight: 300;
+    flex: 1;
+    font-size: rem(24px);
+    color: #fff;
+}
+
+
+small {
+    font-size: 13px;
+    display: block;
+    opacity: 0.5;
+    font-weight: 500;
+
+}
+
+
+.fa-lock {
+    font-size: 56px;
+}
+
+.card {
+    position: absolute;
+    top: 10px;
+    left: 100vh;
+}
