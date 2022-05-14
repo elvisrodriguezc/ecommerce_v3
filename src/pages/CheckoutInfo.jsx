@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 
 const CheckoutInfo = () => {
 	return (
@@ -22,35 +23,35 @@ const CheckoutInfo = () => {
 									</div>
 									<div class="col-lg-3">
 										<div class="step active">
-											<a href="#">
+											<Link to="/">
 												<div class="number">2</div>
 												<div class="info">
 													<div class="title">Shipping Address</div>
 													<div class="desc">Vivamus eleifend euismod.</div>
 												</div>
-											</a>
+											</Link>
 										</div>
 									</div>
 									<div class="col-lg-3">
 										<div class="step">
-											<a href="checkout_payment.html">
+											<Link to="/">
 												<div class="number">3</div>
 												<div class="info">
 													<div class="title">Payment</div>
 													<div class="desc">Aenean ut pretium ipsum. </div>
 												</div>
-											</a>
+											</Link>
 										</div>
 									</div>
 									<div class="col-lg-3">
 										<div class="step">
-											<a href="checkout_complete.html">
+											<Link to="/">
 												<div class="number">4</div>
 												<div class="info">
 													<div class="title">Complete Payment</div>
 													<div class="desc">Curabitur interdum libero.</div>
 												</div>
-											</a>
+											</Link>
 										</div>
 									</div>
 								</div>

@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 
 const CheckoutCart = () => {
     return (
@@ -11,46 +12,46 @@ const CheckoutCart = () => {
                                 <div class="row">
                                     <div class="col-lg-3">
                                         <div class="step active">
-                                            <a href="#">
+                                            <Link to="/">
                                                 <div class="number">1</div>
                                                 <div class="info">
                                                     <div class="title">Delivery Options</div>
                                                     <div class="desc">Lorem ipsum dolor sit amet.</div>
                                                 </div>
-                                            </a>
+                                            </Link>
                                         </div>
                                     </div>
                                     <div class="col-lg-3">
                                         <div class="step">
-                                            <a href="checkout_info.html">
+                                            <Link to="/">
                                                 <div class="number">2</div>
                                                 <div class="info">
                                                     <div class="title">Shipping Address</div>
                                                     <div class="desc">Vivamus eleifend euismod.</div>
                                                 </div>
-                                            </a>
+                                            </Link>
                                         </div>
                                     </div>
                                     <div class="col-lg-3">
                                         <div class="step">
-                                            <a href="checkout_payment.html">
+                                            <Link to="/">
                                                 <div class="number">3</div>
                                                 <div class="info">
                                                     <div class="title">Payment</div>
                                                     <div class="desc">Aenean ut pretium ipsum. </div>
                                                 </div>
-                                            </a>
+                                            </Link>
                                         </div>
                                     </div>
                                     <div class="col-lg-3">
                                         <div class="step">
-                                            <a href="checkout_complete.html">
+                                            <Link to="/">
                                                 <div class="number">4</div>
                                                 <div class="info">
                                                     <div class="title">Complete Payment</div>
                                                     <div class="desc">Curabitur interdum libero.</div>
                                                 </div>
-                                            </a>
+                                            </Link>
                                         </div>
                                     </div>
                                 </div>
@@ -82,9 +83,9 @@ const CheckoutCart = () => {
                                                 <td class="cart-price text-center">$999.00</td>
                                                 <td class="cart-qty text-center">
                                                     <div class="cart-qty-input">
-                                                        <a href="#" class="qty-control left disabled" data-click="decrease-qty" data-target="#qty"><i class="fa fa-minus"></i></a>
+                                                        <Link to="/" class="qty-control left disabled" data-click="decrease-qty" data-target="#qty"><i class="fa fa-minus"></i></Link>
                                                         <input type="text" name="qty" value="1" class="form-control" id="qty" />
-                                                        <a href="#" class="qty-control right disabled" data-click="increase-qty" data-target="#qty"><i class="fa fa-plus"></i></a>
+                                                        <Link to="/" class="qty-control right disabled" data-click="increase-qty" data-target="#qty"><i class="fa fa-plus"></i></Link>
                                                     </div>
                                                     <div class="qty-desc">1 to max order</div>
                                                 </td>
@@ -115,7 +116,7 @@ const CheckoutCart = () => {
                                 </div>
                             </div>
                             <div class="checkout-footer d-flex">
-                                <a href="#" class="btn btn-white btn-lg me-auto btn-theme w-250px">CONTINUE SHOPPING</a>
+                                <Link to="/" class="btn btn-white btn-lg me-auto btn-theme w-250px">CONTINUE SHOPPING</Link>
                                 <button type="submit" class="btn btn-dark btn-lg btn-theme w-250px">CHECKOUT</button>
                             </div>
                         </form>
