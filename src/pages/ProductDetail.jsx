@@ -6,6 +6,7 @@ import Footer from '../components/Footer'
 //Redux
 import { useSelector, useDispatch } from "react-redux";
 import { addToCart } from '../Reducer/Slices/prodSlice'
+import { Link } from 'react-router-dom'
 
 const ProductDetail = () => {
     const params = useParams()
@@ -30,7 +31,7 @@ const ProductDetail = () => {
                             <ul className="product-thumbnail-list" style={{ overflow: 'none' }}>
                                 {product.images.map((image, index) => (
                                     <li key={index}>
-                                        <a href="#" data-click="show-main-image" data-url={image.url}><img src={image.url} alt="" /></a>
+                                        <Link to="/" data-click="show-main-image" data-url={image.url}><img src={image.url} alt="" /></Link>
                                     </li>
                                 ))}
                             </ul>
@@ -52,11 +53,7 @@ const ProductDetail = () => {
                         </ul>
                         <div className="product-social">
                             <ul>
-                                <li><a href="javascript:;" className="facebook" data-bs-toggle="tooltip" data-bs-trigger="hover" data-bs-title="Facebook" data-bs-placement="top"><i className="fab fa-facebook-f"></i></a></li>
-                                <li><a href="javascript:;" className="twitter" data-bs-toggle="tooltip" data-bs-trigger="hover" data-bs-title="Twitter" data-bs-placement="top"><i className="fab fa-twitter"></i></a></li>
-                                <li><a href="javascript:;" className="google-plus" data-bs-toggle="tooltip" data-bs-trigger="hover" data-bs-title="Google Plus" data-bs-placement="top"><i className="fab fa-google-plus-g"></i></a></li>
-                                <li><a href="javascript:;" className="whatsapp" data-bs-toggle="tooltip" data-bs-trigger="hover" data-bs-title="Whatsapp" data-bs-placement="top"><i className="fab fa-whatsapp"></i></a></li>
-                                <li><a href="javascript:;" className="tumblr" data-bs-toggle="tooltip" data-bs-trigger="hover" data-bs-title="Tumblr" data-bs-placement="top"><i className="fab fa-tumblr"></i></a></li>
+                                <li><Link to="/" className="facebook" data-bs-toggle="tooltip" data-bs-trigger="hover" data-bs-title="Facebook" data-bs-placement="top"><i className="fab fa-facebook-f"></i></Link></li>
                             </ul>
                         </div>
                         <div className="product-purchase-container">
@@ -75,10 +72,10 @@ const ProductDetail = () => {
             <div className="row gx-2">
                 <div className="col-lg-2 col-md-4">
                     <div className="item item-thumbnail">
-                        <a href="product_detail.html" className="item-image">
+                        <Link to="/" className="item-image">
                             <img src="../assets/img/product/product-iphone.png" alt="" />
                             <div className="discount">15% OFF</div>
-                        </a>
+                        </Link>
                         <div className="item-info">
                             <h4 className="item-title">
                                 <a href="product_detail.html">iPhone 6s Plus<br />16GB</a>
@@ -91,10 +88,10 @@ const ProductDetail = () => {
                 </div>
                 <div className="col-lg-2 col-md-4">
                     <div className="item item-thumbnail">
-                        <a href="product_detail.html" className="item-image">
+                        <Link to="/" className="item-image">
                             <img src="../assets/img/product/product-samsung-note5.png" alt="" />
                             <div className="discount">32% OFF</div>
-                        </a>
+                        </Link>
                         <div className="item-info">
                             <h4 className="item-title">
                                 <a href="product.html">Samsung Galaxy Note 5<br />Black</a>
@@ -107,10 +104,10 @@ const ProductDetail = () => {
                 </div>
                 <div className="col-lg-2 col-md-4">
                     <div className="item item-thumbnail">
-                        <a href="product_detail.html" className="item-image">
+                        <Link to="/" className="item-image">
                             <img src="../assets/img/product/product-iphone-se.png" alt="" />
                             <div className="discount">20% OFF</div>
-                        </a>
+                        </Link>
                         <div className="item-info">
                             <h4 className="item-title">
                                 <a href="product.html">iPhone SE<br />32/64Gb</a>
@@ -123,13 +120,13 @@ const ProductDetail = () => {
                 </div>
                 <div className="col-lg-2 col-md-4">
                     <div className="item item-thumbnail">
-                        <a href="product_detail.html" className="item-image">
+                        <Link to="/" className="item-image">
                             <img src="../assets/img/product/product-zenfone2.png" alt="" />
                             <div className="discount">15% OFF</div>
-                        </a>
+                        </Link>
                         <div className="item-info">
                             <h4 className="item-title">
-                                <a href="product_detail.html">Assus ZenFone 2<br />‏(ZE550ML)</a>
+                                <Link to="/">Assus ZenFone 2<br />‏(ZE550ML)</Link>
                             </h4>
                             <p className="item-desc">See What Others Can’t See</p>
                             <div className="item-price">$399.00</div>
@@ -139,13 +136,13 @@ const ProductDetail = () => {
                 </div>
                 <div className="col-lg-2 col-md-4">
                     <div className="item item-thumbnail">
-                        <a href="product_detail.html" className="item-image">
+                        <Link to="/" className="item-image">
                             <img src="../assets/img/product/product-xperia-z.png" alt="" />
                             <div className="discount">32% OFF</div>
-                        </a>
+                        </Link>
                         <div className="item-info">
                             <h4 className="item-title">
-                                <a href="product.html">Sony Xperia Z<br />Black Color</a>
+                                <Link to="/">Sony Xperia Z<br />Black Color</Link>
                             </h4>
                             <p className="item-desc">For unexpectedly beautiful moments</p>
                             <div className="item-price">$599.00</div>
@@ -155,10 +152,10 @@ const ProductDetail = () => {
                 </div>
                 <div className="col-lg-2 col-md-4">
                     <div className="item item-thumbnail">
-                        <a href="product_detail.html" className="item-image">
+                        <Link to="/" className="item-image">
                             <img src="../assets/img/product/product-lumia-532.png" alt="" />
                             <div className="discount">20% OFF</div>
-                        </a>
+                        </Link>
                         <div className="item-info">
                             <h4 className="item-title">
                                 <a href="product.html">Microsoft Lumia 531<br />Smartphone Orange</a>

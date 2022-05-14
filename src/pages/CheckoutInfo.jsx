@@ -124,9 +124,9 @@ const CheckoutInfo = () => {
 											<input type="checkbox" class="form-check-input" id="business_address" name="business_address" value="1" />
 											<label class="form-check-label" for="business_address">
 												This is a business address
-												<a href="#" class="ms-5px text-muted" data-bs-toggle="tooltip" data-bs-trigger="hover" data-bs-placement="top" data-title="This helps us choose the best shipping method for you. Business shipments are normally delivered on weekdays by 5:00 p.m. local time. Residential shipments are normally delivered Monday - Saturday by 8:00 p.m. local time.">
+												<Link to="/" class="ms-5px text-muted" data-bs-toggle="tooltip" data-bs-trigger="hover" data-bs-placement="top" data-title="This helps us choose the best shipping method for you. Business shipments are normally delivered on weekdays by 5:00 p.m. local time. Residential shipments are normally delivered Monday - Saturday by 8:00 p.m. local time.">
 													<i class="fa fa-question-circle"></i>
-												</a>
+												</Link>
 											</label>
 										</div>
 									</div>
