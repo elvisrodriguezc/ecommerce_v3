@@ -1,0 +1,49 @@
+.error {
+	margin: 0 auto;
+	text-align: center;
+	height: 100vh;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+
+}
+
+.error-code,
+.error-content {
+	flex: 1;
+	transform: translateZ(0);
+}
+
+.error-code {
+	color: var(--app-component-color);
+	font-size: 200px;
+	line-height: 1;
+	text-shadow: 10px 10px 0px rgba(var(--app-component-color-rgb), .2);
+	padding: rem-default(15px) * 2;
+	height: 50vh;
+	display: flex;
+	justify-content: center;
+	align-items: flex-end;
+}
+
+.error-content {
+	bottom: 0;
+	padding: rem-default(15px) * 2;
+	background: #2d353c;
+	background-image: url(../../../public/assets/img/work/work-img-1.jpg);
+	background-size: cover;
+}
+
+.error-message {
+	color: #FFFFFF;
+	font-size: rem(24px);
+	line-height: 4px;
+	letter-spacing: 0.5px;
+	margin-bottom: rem-default(15px) * .5;
+}
+
+.error-desc {
+	font-size: 1rem;
+	color: rgba(#FFFFFF, .5);
+	letter-spacing: 0.5px;
+}

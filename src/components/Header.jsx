@@ -23,13 +23,13 @@ const Header = () => {
                         {/* END navbar-toggle */}
                         {/* BEGIN header-logo */}
                         <div className="header-logo">
-                            <a href="index.html">
+                            <Link to="/">
                                 <span className="brand-logo"></span>
                                 <span className="brand-text">
                                     <span>Jewelry</span>Academlo
                                     <small>e-commerce React module, last project</small>
                                 </span>
-                            </a>
+                            </Link>
                         </div>
                         {/* END header-logo */}
                         {/* BEGIN header-nav */}

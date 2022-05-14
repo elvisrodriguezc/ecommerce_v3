@@ -37,10 +37,10 @@ const getAPIData = async (data) => {
             configData.url += "/cart/" + data.id
             break
         case "cart_item_delete":
-            configData.url += "/cart/" + data.id
+            configData.url += "/cart/" + data.id + "/remove_item/"
             break
         case "cart_add_product":
-            configData.url += "/cart/" + data.id
+            configData.url += "/products/add_to_cart/"
             break
         default:
             configData.url += "/"

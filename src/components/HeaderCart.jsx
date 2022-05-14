@@ -7,6 +7,10 @@ import { Link } from 'react-router-dom';
 
 const HeaderCart = () => {
     const { cart } = useSelector(state => state.ecommerce);
+    const handleLogout = () => {
+        localStorage.removeItem('token');
+        window.location.reload();
+    }
     return (
         <div>
             <div className="header-nav">
@@ -23,9 +27,9 @@ const HeaderCart = () => {
                             </div>
                             <div className="cart-body">
                                 <ul className="cart-item">
-                                    {cart.map((product, index) => (
-                                        <HeaderCartItem key={index} product={product} />
-                                    ))}
+                                    {cart ? cart.map((item, index) => (
+                                        <HeaderCartItem key={index} item={item} />
+                                    )) : ""}
                                 </ul>
                             </div>
                             <div className="cart-footer">
@@ -46,7 +50,7 @@ const HeaderCart = () => {
                     <li>
                         <a href="my_account.html">
                             <img src="../assets/img/user/user-1.jpg" className="user-img" alt="" />
-                            <span className="d-none d-xl-inline">Login / Register</span>
+                            <span className="d-none d-xl-inline" onClick={handleLogout}>Logout</span>
                         </a>
                     </li>
                 </ul>

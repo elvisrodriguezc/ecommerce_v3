@@ -131,3 +131,19 @@ export const addToCart = (item) => (dispatch) => {
             console.log(err);
         })
 }
+export const deleteCartItem = (id) => (dispatch) => {
+    const data = {
+        type: "cart_item_delete",
+        method: 'DELETE',
+        params: {},
+        data: {},
+        id: id
+    }
+    getAPIData(data)
+        .then(res => {
+            fetchCart();
+        })
+        .catch(err => {
+            console.log(err);
+        })
+}

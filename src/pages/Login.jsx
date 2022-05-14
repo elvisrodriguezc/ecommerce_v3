@@ -19,7 +19,7 @@ const Login = () => {
 		dispatch(fetchLogin(data));
 	}
 	if (!!isLogged) {
-		return <Navigate to='/main' />;
+		return <Navigate to='/' />;
 	}
 
 	return (
